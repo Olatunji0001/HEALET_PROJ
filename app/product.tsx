@@ -7,11 +7,10 @@ import p5 from "@/public/p5.png";
 import p6 from "@/public/p6.png";
 import p7 from "@/public/p7.png";
 import p8 from "@/public/p8.png";
-// import { url } from "inspector";
 type product = {
-  id: Number;
-  name: String;
-  price: String;
+  id: number;
+  name: string;
+  price: string;
   image: typeof p1;
 };
 

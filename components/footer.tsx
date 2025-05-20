@@ -5,6 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { MdLocationPin } from "react-icons/md";
 import { MdCall } from "react-icons/md";
 import { MdOutlineMail } from "react-icons/md";
+import Image from "next/image";
 
 export default function Footer () {
     return(
@@ -37,7 +38,12 @@ export default function Footer () {
                         <h1 className="footer-head2">Instagram</h1>
                         <div className="img-holder">
                             <div className="footer-img">
-                                <img src="p1.png" alt="img" />
+                                <img
+                                    src="p1.png"
+                                    className="im"
+                                    alt=""
+                                />
+                                
                             </div>
                             <div>
                                 <p>long established fact that a reader</p>
@@ -45,7 +51,12 @@ export default function Footer () {
                         </div>
                         <div className="img-holder">
                             <div className="footer-img">
-                                <img src="p2.png" alt="img" />
+                                <img
+                                    src="p2.png"
+                                    className="jay"
+                                    alt=""
+                                />
+                                
                             </div>
                             <div>
                                 <p>long established fact that a reader</p>
