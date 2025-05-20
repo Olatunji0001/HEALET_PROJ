@@ -38,10 +38,12 @@ export default function Footer () {
                         <h1 className="footer-head2">Instagram</h1>
                         <div className="img-holder">
                             <div className="footer-img">
-                                <img
-                                    src="p1.png"
+                                <Image
+                                    src="/p1.png"
                                     className="im"
                                     alt=""
+                                    width={100}
+                                    height={100}
                                 />
                                 
                             </div>
@@ -51,10 +53,12 @@ export default function Footer () {
                         </div>
                         <div className="img-holder">
                             <div className="footer-img">
-                                <img
-                                    src="p2.png"
+                                <Image
+                                    src="/p2.png"
                                     className="jay"
                                     alt=""
+                                    width={100}
+                                    height={100}
                                 />
                                 
                             </div>
