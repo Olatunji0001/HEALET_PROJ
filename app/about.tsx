@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function About() {
   return (
     <>
@@ -5,7 +6,7 @@ export default function About() {
         <div className="about1">
           <div className="about4">
             <div className="about3">
-              <img src="about-img.jpg" alt="" />
+              <Image src="/about-img.jpg" alt="about" width={100} height={100} />
             </div>
           </div>
         </div>

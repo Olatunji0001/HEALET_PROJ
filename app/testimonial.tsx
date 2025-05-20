@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import Image from "next/image";
 
 type Testimonial = {
   id: number;
@@ -18,19 +19,19 @@ export default function Test() {
       id: 1,
       name: "Samantha Jonas",
       text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      image: "client.jpg"
+      image: "/client.jpg"
     },
     {
       id: 2,
       name: "Michael Johnson",
       text: "I was completely satisfied with the service. The team went above and beyond my expectations.",
-      image: "client.jpg"
+      image: "/client.jpg"
     },
     {
       id: 3,
       name: "Emily Chen",
       text: "The product quality is outstanding and the customer support is excellent. Highly recommended!",
-      image: "client.jpg"
+      image: "/client.jpg"
     }
   ];
 
@@ -54,10 +55,10 @@ export default function Test() {
         <h1 className="h">Testimonial</h1>
         <div className="testimonial">
           <div className="rounded">
-            <img 
+            <Image 
               src={testimonials[currentTestimonial].image} 
               alt={testimonials[currentTestimonial].name} 
-              className="rounded2" 
+              className="rounded2"  width={100} height={100}
             />
           </div>
           <h1>{testimonials[currentTestimonial].name}</h1>
