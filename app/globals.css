@@ -3,72 +3,65 @@
 button{
   cursor: pointer;
 }
-.header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  /* z-index: 0; */
-  bottom: 2px;
+.menu-overlay {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 50%;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
 }
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: white;
-  letter-spacing: 1px;
+.close-icon {
+    color: black;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    background-color: white;
+    padding: 15px;
+    border-radius: 100%;
+    font-size: 20px;
 }
-
-.nav-menu {
-  display: flex;
-  align-items: center;
+.menu-list {
+    list-style-type: none;
+    padding: 20px;
+    color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 30px;
+    font-size: 20px;
 }
-
-.nav-menu ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-menu li {
-  margin-left: 2rem;
-}
-
-.nav-menu li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-menu li a:hover {
+.menu-list li:hover{
   color: #fd9c6b;
 }
-
-.menu-toggle, .close-menu {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  color: black;
-  background-color: white;
-  padding: 15px;
-  border-radius: 100%;
+.menu-button {
+    background-color: black;
+    border-radius: 100px;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    color: aliceblue;
+    font-size: 25px;
 }
+.j{
+  color: #fd9c6b;
+  font-size: 30px;
+}
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 10px;
+    top: -5;
+    position: fixed;
+}
+
 
 .close-menu {
   position: absolute;
@@ -587,42 +580,7 @@ ul{
 }
 
 
-@media screen and (min-width: 100px) {
-  .menu-toggle {
-    display: block;
-  }
-  
-  .nav-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100vh;
-    background-color: black;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-    transition: right 0.3s ease;
-    /* position: absolute; */
-  }
-  
-  .nav-menu.active {
-    right: 0;
-  }
-  
-  .nav-menu ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .nav-menu li {
-    margin: 1.5rem 0;
-  }
 
-  .close-menu {
-    display: block;
-  }
-}
 @media screen and (min-width : 1200px) {
   .biggest{
     max-width: 1300px;
@@ -752,6 +710,7 @@ ul{
   }
   .footer-input{
     justify-content: center;
+    /* width: 10px; */
   }
   .footer-input input{
     width: 270px;
